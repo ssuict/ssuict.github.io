@@ -144,6 +144,7 @@ p {
 }
 
 
+
 /* フッター */
 
 #footer {
@@ -158,6 +159,103 @@ p {
 	border-top: solid 1px #aaaaaa;
 }
 
+/* プルダウンメニュー */
+
+.navi {
+	width: 760px;
+	border-top: solid 1px #aaaaaa;
+	font-size: 0.875em;
+}
+.navi ul {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+.navi li {
+	float: left;
+	line-height: 30px;
+	width: 152px;
+	list-style-type: none;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+.navi li a {
+	display: block;
+	color: #006699;
+	text-decoration: none;
+	text-align: center;
+	background-color: #bac2da;
+	border-right: solid 1px #aaaaaa;
+	border-bottom: solid 1px #aaaaaa;
+}
+.navi ul li:first-child a {
+	border-left: solid 1px #aaaaaa;
+}
+.navi li a:hover {
+	color: #cc0000;
+	background-color: #f1f1f1;
+}
+/* li:hoverで下層のプルダウンメニューを可視に */
+.navi ul li:hover ul {
+	display: block;
+	position: absolute;
+}
+/* 下層のプルダウンメニューを非表示に */
+.navi li ul{
+	display: none;
+}
+.navi li li {
+	float: none;
+}
+.navi li li a {
+	background-color: #dfdfdf;
+	border-left: solid 1px #aaaaaa;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="navi">
+ <ul>
+  <li><a href="#">Menu 01</a>
+  	<ul>
+	 <li><a href="#">sub menu01</a></li>
+	 <li><a href="#">sub menu02</a></li>
+	 <li><a href="#">sub menu03</a></li>
+	</ul>
+  </li>
+  <li><a href="#">Menu 02</a>
+    <ul>
+	 <li><a href="#">sub menu01</a></li>
+	 <li><a href="#">sub menu02</a></li>
+	 <li><a href="#">sub menu03</a></li>
+	</ul>
+  </li>
+  <li><a href="#">Menu 03</a>
+    <ul>
+	 <li><a href="#">sub menu01</a></li>
+	 <li><a href="#">sub menu02</a></li>
+	 <li><a href="#">sub menu03</a></li>
+	</ul>
+  </li>
+  <li><a href="#">Menu 04</a>
+    <ul>
+	 <li><a href="#">sub menu01</a></li>
+	 <li><a href="#">sub menu02</a></li>
+	 <li><a href="#">sub menu03</a></li>
+	</ul>
+  </li>
+  <li><a href="#">Menu 05</a>
+	<ul>
+	 <li><a href="#">sub menu01</a></li>
+	 <li><a href="#">sub menu02</a></li>
+	 <li><a href="#">sub menu03</a></li>
+	</ul>
+  </li>
+ </ul>
+</div>
 
 
 
@@ -174,11 +272,11 @@ p {
 <div id="header">
 <div id="header_title">
 	
-<h1><a href="https://ssuict.github.io/index.html">ＳＳＵ　オンライン授業・Ｗｅｂ会議<br>　　　　　　ポータルサイト</a></h1>
-	
-<p>オンライン授業・Ｗｅｂ会議の接続方法等を<br>　　　　　　　掲出していきます</p>
+<h1><a href="https://ssuict.github.io/index.html">ＳＳＵ　オンライン授業・Ｗｅｂ会議<br>　　　　　　ポータルサイト</a></h1>	
+<center><p>オンライン授業・Ｗｅｂ会議の接続方法等を掲出していきます</p></center>
 </div>
 </div>
+
 
 
 <div id="contents">
